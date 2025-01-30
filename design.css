@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  color: #333;
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: green;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+h2, h3 {
+  color: green;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Tracker Section */
+.tracker, .custom-activity {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+select, input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #f9f9f9;
+  transition: background 0.3s;
+}
+
+select:focus, input:focus {
+  background: #f1f1f1;
+}
+
+button {
+  padding: 10px 15px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #388e3c, #43a047);
+  transform: scale(1.05);
+}
+
+/* Reset Button */
+#reset {
+  background: linear-gradient(135deg, #f44336, #e57373);
+  font-size: 0.9rem;
+}
+
+#reset:hover {
+  background: linear-gradient(135deg, #c62828, #d32f2f);
+}
+
+/* Output Section */
+.output ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.output li {
+  background: #e8f5e9;
+  color: #388e3c;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#totalCarbon {
+  font-weight: bold;
+  color: #d84315;
+  font-size: 1.2rem;
+}
+
+/* Suggestions */
+#suggestions li {
+  background: #f3e5f5;
+  color: #6a1b9a;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Eco Tip */
+#ecoTip {
+  background: #fff3e0;
+  color: #ef6c00;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f0f4c3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tracker, .custom-activity {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
