@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Tracker</h1>
+    <div class="tracker">
+      <label for="activity">Select Activity:</label>
+      <select id="activity">
+        <option value="2">Driving (10km) - 2kg CO₂</option>
+        <option value="5">Flight (1hr) - 5kg CO₂</option>
+        <option value="1">Electricity Usage (1hr) - 1kg CO₂</option>
+      </select>
+      <button id="addActivity">Add Activity</button>
+    </div>
+    <div class="custom-activity">
+      <h3>Add Custom Activity</h3>
+      <input type="text" id="customActivityName" placeholder="Activity Name">
+      <input type="number" id="customActivityValue" placeholder="Carbon Value (kg CO₂)">
+      <button id="addCustomActivity">Add Custom Activity</button>
+    </div>
+    <div class="output">
+      <h2>Logged Activities</h2>
+      <ul id="activityList"></ul>
+      <p>Total Carbon Emissions: <span id="totalCarbon">0</span> kg CO₂</p>
+      <button id="reset">Reset</button>
+      <h3>Suggestions:</h3>
+      <ul id="suggestions">
+        <li>Use public transport or carpool when possible.</li>
+        <li>Reduce electricity usage at peak times.</li>
+        <li>Opt for sustainable travel alternatives.</li>
+      </ul>
+      <h3>Eco-Friendly Tip:</h3>
+      <p id="ecoTip">Save water by turning off the tap while brushing your teeth.</p>
+    </div>
+    <div class="chart-container">
+      <canvas id="carbonChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
